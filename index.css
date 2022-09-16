@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  ul,
+  ol {
+    padding: 0;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+  textarea {
+    resize: none;
+  }
+
+
+.container {
+background-color: #525252;
+    width: 1200px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+.div {
+    display: flex;
+    justify-content: center;
+    }
+.diver {
+    
+    padding: 100px;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: #525252;
+    color: aliceblue;
+  transition: 250ms ease;
+}
+.ort {
+    height: 18px;
+    margin-top: 30px;
+    color: aliceblue;
+}
+.button:hover,
+.button:focus{
+    background-color: aliceblue;
+    color: black;
+     border: 2px solid #b6acb6;
+cursor: pointer;
+}
+
+*{
+    margin:0;
+    padding:0;
+  }
+  .cube{
+   
+    width:300px;
+    height:300px;
+    margin:100px auto;
+    position: relative;
+    transform-origin:50% 50% -150px;
+    transform-style:preserve-3d;
+    transform:rotate(360deg);
+    transform:rotate3d(1,1,1,50deg);
+    transition: 2s linear;
+  
+  }
+  
+  .item{
+    width:inherit;
+    height:inherit;
+    position: absolute;
+    border:6px solid #ccc;
+    border-radius:10px;
+    line-height:300px;
+    text-align:center;
+    font-size:3em;
+    background:rgba(0,0,0,.3);
+    color:#fbfbfb;
+    transform-origin:50% 50% -150px;
+  }
+  
+  .item2{transform:rotateY(90deg);}
+  .item3{transform:rotateY(-90deg);}
+  .item4{transform:rotateX(90deg);}
+  .item5{transform:rotateX(-90deg);}
+  .item6{transform:rotateY(180deg);}
