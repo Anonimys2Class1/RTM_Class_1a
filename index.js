@@ -1,4 +1,16 @@
 'use strict';
+ let x = 0,
+ y = 0;
+
+document.addEventListener('keydown', function(e){
+if(e.keyCode == 37) y -= 5;
+if(e.keyCode == 39) y += 5;
+if(e.keyCode == 38) x += 5;
+if(e.keyCode == 40) x -= 5;
+
+document.querySelector('.cube').style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
+});
+
 function f1() {
     let p;
     p = document.getElementById('our')
@@ -14,7 +26,6 @@ function f1() {
  }
  nanmeber (`${nanmeberOne}`, `${nanmeberTo}`)
  }
-
  function f3() {
     let p;
     p = document.getElementById('nanber')
@@ -28,14 +39,3 @@ function f2() {
     
 }
 
-let x = 0,
-    y = 0;
-
-document.addEventListener('keydown', function(e){
-  if(e.keyCode == 37) y -= 5;
-  if(e.keyCode == 39) y += 5;
-  if(e.keyCode == 38) x += 5;
-  if(e.keyCode == 40) x -= 5;
- 
- document.querySelector('.cube').style.transform = `rotateY(${y}deg) rotateX(${x}deg)`;
-});
