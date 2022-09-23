@@ -45,7 +45,7 @@ function clickButtto(evt) {
 if(evt.target.textContent === "Множення"){
    namderOne()
 }
-if(evt.target.textContent === "getRandomHexColor"){
+if(evt.target.textContent === "Нажми"){
    const button = document.querySelector('.js-button-color');
    const p = document.querySelector('#tere');
    let hexColor =  getRandomHexColor()
