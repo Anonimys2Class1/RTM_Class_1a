@@ -47,7 +47,7 @@ if(evt.target.textContent === "Множення"){
 }
 if(evt.target.textContent === "Нажми"){
    const button = document.querySelector('.js-button-color');
-   const p = document.querySelector('#tere');
+   const p = document.querySelector('#string');
    let hexColor =  getRandomHexColor()
    document.body.style.backgroundColor = hexColor;
    button.style.backgroundColor = hexColor
